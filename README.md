@@ -8,8 +8,8 @@ Process:
 ## Installation
 install node & npm
 
-$> npm install
-$> node elasticsearchTool
+$> npm install  
+$> node elasticsearchTool  
 
 	$> elasticsearch-informix-tool --help
 	Usage: elasticsearchTool [options] <file>
