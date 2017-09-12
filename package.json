@@ -1,0 +1,25 @@
+{
+  "name": "elk-insert",
+  "version": "1.0.0",
+  "description": "Used to add documents to a elasticsearch index.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "elk-ingest": "java -jar hoss_data_ingress.jar",
+    "start": "elasticsearch-inject.js"
+  },
+  "keywords": [
+    "elasticsearch",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Jerum Hubbert",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "config": "^1.26.2",
+    "elasticsearch": "^13.3.1",
+    "properties-reader": "0.0.15",
+    "thread-sleep": "^2.0.0"
+  }
+}
