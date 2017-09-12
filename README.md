@@ -16,10 +16,10 @@ $> node elasticsearchTool
 
   Options:
 
-  -f, --force  <indexName>  Use if you want to specify the index. And want to skip the data gather process.
-  -c, --create <indexName>  When used this will create a new index and insert the new documents
-  -u, --update <indexName>  When used this will try to update the index and insert the new documents.
-  -h, --help                output usage information
+  -f, --force  <indexName>  Use if you want to specify the index. And want to skip the data gather process.  
+  -c, --create <indexName>  When used this will create a new index and insert the new documents  
+  -u, --update <indexName>  When used this will try to update the index and insert the new documents.  
+  -h, --help                output usage information  
 
 
 ## How to use the elasticsearch-informix-tool
