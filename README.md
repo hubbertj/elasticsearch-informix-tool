@@ -1,4 +1,4 @@
-# elasticsearch-hoss-Tool
+# Elasticsearch-informix-tool
 Creates, updates a elasticsearch index.
 Process:
 	Pulls all records from the informix data defined in your properties file.
@@ -9,10 +9,10 @@ Process:
 install node & npm
 
 $> npm install
-$> node elasticsearchHossTool
+$> node elasticsearchTool
 
-	$> elasticsearchHossTool --help
-	Usage: elasticsearchHossTool [options] <file>
+	$> elasticsearch-informix-tool --help
+	Usage: elasticsearchTool [options] <file>
 
   Options:
 
@@ -22,17 +22,17 @@ $> node elasticsearchHossTool
   -h, --help                output usage information
 
 
-## How to use the elasticsearch-hoss-tool
+## How to use the elasticsearch-informix-tool
     
-    $> node elasticsearchHossTool -c searchable
+    $> node elasticsearch-informix-tool -c searchable
     This will pull json from the database, then create a index called searchable
     Then inject documents from the json file into your new index "searchable".
   
 ## Notes
 All configuration are located in the config/application.properties file
-When the applicaiton runs the hoss_data_ingress.jar it creates a output folder with FilterDataList.json and RawDataList.json
+When the applicaiton runs the _data_ingress.jar it creates a output folder with FilterDataList.json and RawDataList.json
 RawDataList.json is before the merge is applied.
 
 If you have a issue with herp size you make need to run node like this
-$> node --max-old-space-size=4096 elasticsearchHossTool --create <indexName> 
+$> node --max-old-space-size=4096 elasticsearchTool --create <indexName> 
 
