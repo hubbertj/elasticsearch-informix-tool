@@ -1,19 +1,19 @@
 {
-  "name": "elk-insert",
+  "name": "elasticsearch-tool",
   "version": "1.0.0",
   "description": "Used to add documents to a elasticsearch index.",
-  "main": "main.js",
+  "main": "elasticsearchTool.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "elk-ingest": "java -jar hoss_data_ingress.jar",
-    "start": "elasticsearch-inject.js"
+    "ingest": "java -jar data_ingress.jar",
+    "start": "elasticsearchTool.js"
   },
   "keywords": [
     "elasticsearch",
     "nodejs",
     "javascript"
   ],
-  "author": "Jerum Hubbert",
+  "author": "Jerum Lee Hubbert",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.11.0",
@@ -21,5 +21,6 @@
     "elasticsearch": "^13.3.1",
     "properties-reader": "0.0.15",
     "thread-sleep": "^2.0.0"
-  }
+  },
+  "repository": "github:hubbertj/elasticsearch-tool.git"
 }
