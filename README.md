@@ -16,23 +16,25 @@ $> node elasticsearchTool
 
   Options:
 
-  -f, --force  <indexName>  Use if you want to specify the index. And want to skip the data gather process.  
-  -c, --create <indexName>  When used this will create a new index and insert the new documents  
-  -u, --update <indexName>  When used this will try to update the index and insert the new documents.  
-  -h, --help                output usage information  
+  -f, &ensp; --force &ensp; *indexName* &ensp; Use if you want to specify the index. And want to skip the data gather process.  
+  -c, &ensp; --create &ensp; *indexName* &ensp; When used this will create a new index and insert the new documents  
+  -u, &ensp; --update &ensp; *indexName* &ensp; When used this will try to update the index and insert the new documents.  
+  -h, &ensp; --help &ensp; output usage information  
 
 
 ## How to use the elasticsearch-informix-tool
     
-    $> node elasticsearch-informix-tool -c searchable
-    This will pull json from the database, then create a index called searchable
-    Then inject documents from the json file into your new index "searchable".
+    $> node elasticsearch-informix-tool -c searchable  
+
+This will pull json from the informix database, then create a index called `searchable`  
+Then inject documents from the json file into your new index `searchable`.
   
 ## Notes
 All configuration are located in the config/application.properties file
 When the applicaiton runs the _data_ingress.jar it creates a output folder with FilterDataList.json and RawDataList.json
 RawDataList.json is before the merge is applied.
 
-If you have a issue with herp size you make need to run node like this
-$> node --max-old-space-size=4096 elasticsearchTool --create <indexName> 
+If you have a issue with herp size you make need to run node like this  
+
+    $> node --max-old-space-size=4096 elasticsearch-informix-tool --create `indexName` 
 
