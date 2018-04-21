@@ -1,12 +1,12 @@
 {
-  "name": "elasticsearch-informix-tool",
+  "name": "Elasticsearch_Informix_Tool",
   "version": "1.0.0",
   "description": "Used to add documents (C,U) to a elasticsearch index from a informix data source.",
   "main": "elasticsearch-informix-tool.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "ingest": "java -jar data_ingress.jar",
-    "start": "elasticsearch-informix-tool.js"
+    "start": "node elasticsearch-informix-tool.js"
   },
   "keywords": [
     "elasticsearch",

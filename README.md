@@ -1,9 +1,12 @@
-# Elasticsearch-informix-tool
+# Elasticsearch Informix Tool
 Creates, updates a elasticsearch index.
-Process:
-	Pulls all records from the informix data defined in your properties file.
-	Depending on your arguments, it will either create or update a index.
-	Pulls from the output/FilterDataList.json and makes the correct rest call to the elk server.
+
+---
+
+## How the process works
++ Pulls all records from the informix data defined in your properties file.
++ Depending on your arguments, it will either create or update a index.
++ Pulls from the output/FilterDataList.json and makes the correct rest call to the elk server.
 
 ## Installation
 install node & npm
@@ -11,8 +14,8 @@ install node & npm
 $> npm install  
 $> node elasticsearchTool  
 
-	$> elasticsearch-informix-tool --help
-	Usage: elasticsearchTool [options] <file>
+  $> elasticsearch-informix-tool --help
+  Usage: elasticsearchTool [options] <file>
 
   Options:
 
